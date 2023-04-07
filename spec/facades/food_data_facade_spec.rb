@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe FoodDataFacade do
   subject(:facade) { described_class.new}
 
-  let(:foods) { facade.get_foods_by_ingredient("potatoes") }
+  let(:foods) { facade.foods_by_ingredient("potatoes") }
 
   describe "instance methods" do
     context "#get_foods_by_ingredient" do
