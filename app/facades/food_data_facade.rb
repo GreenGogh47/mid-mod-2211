@@ -7,7 +7,7 @@ class FoodDataFacade
 
   def foods_by_ingredient(ingredient)
     foods = @service.get_foods_by_ingredient(ingredient)
-    foods.map do |food|
+    foods[:foods].map do |food|
       Food.new(food)
     end
   end
